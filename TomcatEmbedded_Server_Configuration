@@ -1,0 +1,27 @@
+Embbed tomcat for spring mvc
+
+Start the server: mvn tomcat7:run
+Stop the server: Ctrl+c
+
+plug in 
+<plugin>
+	<groupId>org.apache.tomcat.maven</groupId>
+	<artifactId>tomcat7-maven-plugin</artifactId>
+	<version>2.2</version>
+
+	<configuration>
+		<port>9090</port>
+		<update>true</update>
+	</configuration>
+
+</plugin>
+
+Dependency 
+
+<dependency>
+		<groupId>commons-logging</groupId>
+		<artifactId>commons-logging</artifactId>
+		<version>1.2</version>
+</dependency>
+
+
